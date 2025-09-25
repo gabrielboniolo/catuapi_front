@@ -4,11 +4,11 @@ const form = document.getElementById("form")
 const btn = document.getElementById("btn")
 const tbody = document.getElementById("tbody")
 
+//getCafes()
+
 btn.addEventListener("click", setCafe)
 
-async function setCafe(event){
-
-    event.preventDefault()
+async function setCafe(){
 
     let nome = document.getElementById("nome").value
     let produtor = document.getElementById("produtor").value
@@ -19,7 +19,7 @@ async function setCafe(event){
     let sensorial_corpo = document.querySelector('input[name="corpo"]:checked')?.value || null;
     let sensorial_amargor = document.querySelector('input[name="amargor"]:checked')?.value || null;
 
-    cafes = {
+    cafe = {
         nome,
         produtor,
         variedade,
@@ -41,7 +41,7 @@ async function setCafe(event){
             throw new Error("Erro ao salvar café");
         }
 
-        //getCafe(cafes)
+        addCafe(cafe)
 
     } catch(error){
         console.error("Ocorreu um erro:", error)
@@ -50,7 +50,30 @@ async function setCafe(event){
     form.reset()
 }
 
-// function getCafe(cafes){
+function addCafe(cafe){
+    
+    const row = document.createElement("tr")
+
+    row.innerHTML = `
+        <td>${cafe.nome}</td>
+        <td>${cafe.produtor}</td>
+        <td>${cafe.variedade}</td>
+        <td>${cafe.processo}</td>
+        <td>${cafe.sensorial_docura}</td>
+        <td>${cafe.sensorial_acidez}</td>
+        <td>${cafe.sensorial_corpo}</td>
+        <td>${cafe.sensorial_amargor}</td>
+    `
+    tbody.appendChild(row)
+
+}
+
+// function getCafes(){
+
+//     const res = await fetch(API_URL);
+//     const data = await res.json();
+//     const list = document.getElementById("cafes-list");
+    
 //     const row = document.createElement("tr")
 
 //     cafes.forEach(cafe => {
