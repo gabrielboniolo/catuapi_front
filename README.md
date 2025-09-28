@@ -24,13 +24,13 @@ O **Catuapi** busca ser um sistema simples e prático para o gerenciamento de ca
 ---
 
 ## 📂 Estrutura do Projeto
-catuapi_front/
-│── index.html # Página principal da aplicação
-│── src/
-│ ├── styles/
-│ │ └── styles.css # Estilos customizados
-│ └── javascript/
-│ └── script.js # Lógica da aplicação e consumo da API
+catuapi_front/  
+index.html  # Página principal da aplicação  
+src/  
+- styles/  
+-- styles.css  # Estilos customizados  
+- javascript/  
+-- script.js   # Lógica da aplicação e consumo da API  
 
 ---
 
