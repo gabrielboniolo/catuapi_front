@@ -7,27 +7,30 @@
 
 
 body{
+    background-color: #60492C;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: top;
+    justify-content: center;
+    gap: 3rem;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
+/* FORM */
 
 #form_container{
+    background-color: #F2F7F2;
+    box-shadow: 20px 20px 1px rgba(0, 0, 0, 0.445);
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    border-radius: 20px;
+    padding: 1.5rem;
 }
 
 #form_header{
-    color: brown;
+    color: #60492C;
+    padding: 1.5rem 0;
 }
 
 #form{
@@ -36,9 +39,25 @@ main{
     gap: 1.2rem;
 }
 
+.btn_box{
+    text-align: center;
+    padding: .8rem 0;
+}
+
+#btn{
+    padding: .4rem .8rem;
+    cursor: pointer;
+    color: #60492C;
+    background-color: #F2F7F2;
+    border: 2px solid #60492C;
+    font-weight: bold;
+}
+
+/* INPUTS */
+
 .input_container{
     display: flex;
-    gap: .8rem;
+    justify-content: space-between;
 }
 
 .input_box{
@@ -47,73 +66,87 @@ main{
     gap: 1rem;
 }
 
-/* main{
-    
-}
-
-#form_container {
-    margin: 1rem 0;
+.label_box{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: .2rem;
 }
 
-#form_header{
-    margin: 1.5rem 0;
+.label_box label, .sensorial_radio label{
+    font-weight: bold;
+    color: #60492C;
 }
 
-#form{
-    
-}
-
-input {
-    padding: .2rem .6rem;
-}
-
-#btn {
-    padding: .3rem .8rem;
-}
-
-#form_table{
-    padding: 2rem;
-    /* width: 80%; */
-}
-
-.input_container{
-    padding: .5rem 0;
-    display: flex;
-    flex-direction: column;
-}
-
-
-table{
-    /* width: 80%; */
-    padding: .2rem;
+.input_text{
+    padding: .5rem .8rem;
     border: 2px solid black;
+}
+
+/* RADIO BUTTONS */
+
+.sensorial_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    text-align: center;
+}
+
+.sensorial_container h3{
+    color: #60492C;
+    margin: .5rem 0 0 0;
+}
+
+.sensorial_box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sensorial_radio{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.radio_container{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+/* TABLE */
+
+#table_container{
+    min-width: 80vw;
+    display: flex;
+    justify-content: center;
     display: none;
 }
 
-th {
-    border: 1.5px solid red;
-    padding: 1rem;
-}
-
-#th_edit{
-    color: blue;
-}
-
-#th_del{
-    color: red;
-}
-
-tr{
-    border: 1.5px solid blue;
-    padding: .8rem 0;
-}
-
-td{
-    border: 1.5px solid blue;
-    padding: .5rem 0;
+table{
+    background-color: #F2F7F2;
+    color: #60492C;
+    box-shadow: 20px 20px 1px rgba(0, 0, 0, 0.445);
+    border-radius: 12px;
+    border-collapse: collapse;
+    padding: .5rem;
+    width: 80%;
+    margin-bottom: 3rem;
+    table-layout: fixed;
     text-align: center;
-} */
+}
+
+th {
+    padding: .3rem 0;
+    border-bottom: 2px solid #60492C;
+    border-right: 2px solid #60492C;
+}
+
+td {
+    padding: .2rem 0;
+    border-bottom: 2px solid #60492C;
+    border-right: 2px solid #60492C;
+}
+
+i {
+    cursor: pointer;
+}

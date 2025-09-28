@@ -5,42 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catuapi - Cadastro de Cafés Especiais</title>
     <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <main>
-        <section id="form_container">
-            <div id="form_header">
-                <h1 id="form_title">Cadastre o seu Café Especial</h1>
-            </div>
-            <form action="" id="form">
-                <div class="input_container">
-                    <div class="input_box">
-                        <div class="label_box">
-                            <label> Nome </label>
-                            <input type="text" name="" id="nome">
-                        </div>
-                        <div class="label_box">
-                            <label> Produtor </label>
-                            <input type="text" name="" id="produtor">
-                        </div>
+    <section id="form_container">
+        <div id="form_header">
+            <h1 id="form_title">Cadastre o seu Café Especial</h1>
+        </div>
+        <form action="" id="form">
+            <div class="input_container">
+                <div class="input_box">
+                    <div class="label_box">
+                        <label> Nome </label>
+                        <input type="text" name="" id="nome" class="input_text">
                     </div>
-                    <div class="input_box">
-                        <div class="label_box">
-                            <label> Variedade </label>
-                            <input type="text" name="" id="variedade">
-                        </div>
-                        <div class="label_box">
-                            <label> Processo </label>
-                            <input type="text" name="" id="processo">
-                        </div>
+                    <div class="label_box">
+                        <label> Produtor </label>
+                        <input type="text" name="" id="produtor" class="input_text">
                     </div>
                 </div>
-                <div class="radio_container">
-                    <label>Notas Sensoriais</label>
-                    <div class="sensorial_container">
-                        <div class="sensorial_box">
-                            <label>Doçura</label>
-                        
+                <div class="input_box">
+                    <div class="label_box">
+                        <label> Variedade </label>
+                        <input type="text" name="" id="variedade" class="input_text">
+                    </div>
+                    <div class="label_box">
+                        <label> Processo </label>
+                        <input type="text" name="" id="processo" class="input_text">
+                    </div>
+                </div>
+            </div>
+            <div class="sensorial_container">
+                <h3>Notas Sensoriais</h3>
+                <div class="sensorial_box">
+                    <div class="sensorial_radio">
+                        <label>Doçura</label>                 
+                        <div class="radio_container">
                             <div class="radio_box">
                                 <input type="radio" name="docura" id="sensorial_docura_1" value=1>
                                 <label for="">1</label>
@@ -62,8 +62,10 @@
                                 <label for="">5</label>
                             </div>
                         </div>
-                        <div class="sensorial_box">
-                            <label>Acidez</label>
+                    </div>
+                    <div class="sensorial_radio">
+                        <label>Acidez</label>
+                        <div class="radio_container">
                             <div class="radio_box">
                                 <input type="radio" name="acidez" id="sensorial_acidez_1" value=1>
                                 <label for="">1</label>
@@ -84,10 +86,11 @@
                                 <input type="radio" name="acidez" id="sensorial_acidez_5" value=5>
                                 <label for="">5</label>
                             </div>
-                        
                         </div>
-                        <div class="sensorial_box">
-                            <label>Corpo</label>
+                    </div>
+                    <div class="sensorial_radio">
+                        <label>Corpo</label>
+                        <div class="radio_container">
                             <div class="radio_box">
                                 <input type="radio" name="corpo" id="sensorial_corpo_1" value=1>
                                 <label for="">1</label>
@@ -108,11 +111,11 @@
                                 <input type="radio" name="corpo" id="sensorial_corpo_5" value=5>
                                 <label for="">5</label>
                             </div>
-                        
                         </div>
-                        <div class="sensorial_box">
-                            <label>Amargor</label>
-                        
+                    </div>
+                    <div class="sensorial_radio">
+                        <label>Amargor</label>
+                        <div class="radio_container">
                             <div class="radio_box">
                                 <input type="radio" name="amargor" id="sensorial_amargor_1" value=1>
                                 <label for="">1</label>
@@ -136,12 +139,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="btn_box">
-                    <button id="btn">Cadastre</button>
-                </div>
-            </form>
-        </section>
-        <section id="table_container">
+            </div>
+            <div class="btn_box">
+                <button id="btn">Cadastre</button>
+            </div>
+        </form>
+    </section>
+     <section id="table_container">
             <table>
                 <thead>
                     <th>Nome</th>
@@ -156,50 +160,10 @@
                     <th id="th_del">Deletar</th>
                 </thead>
                 <tbody id="tbody">
-                    <tr>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                    </tr>                    
-                    <tr>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                    </tr>                    
-                    <tr>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                    </tr>                    
-                    <tr>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                        <td>teste</td>
-                    </tr>                    
+                                   
                 </tbody>
             </table>
-        </section>
-    </main>
+    </section>
     <script src="src/javascript/script.js"></script>
 </body>
 </html>
