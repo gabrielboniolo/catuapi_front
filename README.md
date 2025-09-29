@@ -1,6 +1,6 @@
 # Catuapi Frontend
 
-Aplicação web desenvolvida como parte do MVP da disciplina **Desenvolvimento Full Stack Básico (PUC-Rio)**.  
+Aplicação web desenvolvida como parte do MVP da disciplina **Desenvolvimento Full Stack Básico)**.  
 O projeto consiste em uma **SPA (Single Page Application)** em HTML, CSS e JavaScript puro para **cadastrar, listar, editar e excluir cafés especiais**, consumindo uma API desenvolvida em Flask.
 
 ---
@@ -67,4 +67,4 @@ Este frontend consome as seguintes rotas da API:
 ---
 
 ## 👨‍💻 Autor
-Desenvolvido por **Gabriel Boniolo** como parte do MVP da disciplina *Engenharia de Software - PUC-Rio* 
+Desenvolvido por **Gabriel Boniolo** como parte do MVP da disciplina | *Engenharia de Software - PUC-Rio* 
